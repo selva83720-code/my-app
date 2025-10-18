@@ -39,7 +39,7 @@ class WalkarooTravelPlanner:
         genai.configure(api_key=GOOGLE_API_KEY)
 
         # ✅ Load single Excel sheet once
-        self.source_file_path = r"C:\Users\KI-LAP-023-USER\Desktop\Travel_plan 3.xlsx"
+        self.source_file_path = r"C:\Users\KI-LAP-023-USER\Desktop\Final\Walkaroo Travel Planner\public\Travel_plan 3.xlsx"
         self.data_df = pd.read_excel(self.source_file_path, sheet_name="Sheet1")
 
         # Define constants for routing
