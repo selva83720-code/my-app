@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_867fd5602c8a3fc04f40db3d11dc3f8a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_867fd5602c8a3fc04f40db3d11dc3f8a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_867fd5602c8a3fc04f40db3d11dc3f8a = L.map(
+                "map_867fd5602c8a3fc04f40db3d11dc3f8a",
+                {
+                    center: [11.0184, 76.9444],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0fa1edeae535b26ced5852eb9b407368 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+            var marker_f038611c069a9abd165d2f852c192f14 = L.marker(
+                [11.0184, 76.9444],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+            var icon_0f535ae25c73f236e5dd7ea35b4eaa85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f038611c069a9abd165d2f852c192f14.setIcon(icon_0f535ae25c73f236e5dd7ea35b4eaa85);
+        
+    
+            marker_f038611c069a9abd165d2f852c192f14.bindTooltip(
+                `<div>
+                     Salesperson Start/End
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6419399e77ac9c066f04306ca550112 = L.marker(
+                [10.999355, 76.959857],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_e47db2c5ef50affa85fda64d20aca50c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0e154bb95825abd0b03bc7d6d8f74df = $(`<div id="html_e0e154bb95825abd0b03bc7d6d8f74df" style="width: 100.0%; height: 100.0%;"><b>Stop 1</b><br>Shop: Mayur Foot Wear(Cbe)-Sub dealer<br>Last Visit: 2025-02-09 00:00:00</div>`)[0];
+                popup_e47db2c5ef50affa85fda64d20aca50c.setContent(html_e0e154bb95825abd0b03bc7d6d8f74df);
+            
+        
+
+        marker_f6419399e77ac9c066f04306ca550112.bindPopup(popup_e47db2c5ef50affa85fda64d20aca50c)
+        ;
+
+        
+    
+    
+            marker_f6419399e77ac9c066f04306ca550112.bindTooltip(
+                `<div>
+                     1. Mayur Foot Wear(Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_baf0f6e44a8e6bb72b2eb670c12a53fb = L.marker(
+                [10.998188, 76.959988],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_71d3f5b0431065a3dfc203e8b113462e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa37b93fb3563d5762ed5dd62d5f8b7 = $(`<div id="html_0aa37b93fb3563d5762ed5dd62d5f8b7" style="width: 100.0%; height: 100.0%;"><b>Stop 2</b><br>Shop: Maruthi Trading Company(Cbe)-Sub dealer<br>Last Visit: 2025-04-23 00:00:00</div>`)[0];
+                popup_71d3f5b0431065a3dfc203e8b113462e.setContent(html_0aa37b93fb3563d5762ed5dd62d5f8b7);
+            
+        
+
+        marker_baf0f6e44a8e6bb72b2eb670c12a53fb.bindPopup(popup_71d3f5b0431065a3dfc203e8b113462e)
+        ;
+
+        
+    
+    
+            marker_baf0f6e44a8e6bb72b2eb670c12a53fb.bindTooltip(
+                `<div>
+                     2. Maruthi Trading Company(Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6009f274c30de3bd0920a30f7a716666 = L.marker(
+                [10.99772, 76.960051],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_a620856d8a8c1b74a3e6fb6a942b8048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4084dd2bcd3560ff59c271410c258207 = $(`<div id="html_4084dd2bcd3560ff59c271410c258207" style="width: 100.0%; height: 100.0%;"><b>Stop 3</b><br>Shop: Pawan Footwear (Cbe)-Sub dealer<br>Last Visit: 2025-09-22 00:00:00</div>`)[0];
+                popup_a620856d8a8c1b74a3e6fb6a942b8048.setContent(html_4084dd2bcd3560ff59c271410c258207);
+            
+        
+
+        marker_6009f274c30de3bd0920a30f7a716666.bindPopup(popup_a620856d8a8c1b74a3e6fb6a942b8048)
+        ;
+
+        
+    
+    
+            marker_6009f274c30de3bd0920a30f7a716666.bindTooltip(
+                `<div>
+                     3. Pawan Footwear (Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d65a23fd743d32b02890f8ee653c2460 = L.marker(
+                [10.997328, 76.960152],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_b42fde6abb219c09d99614e00c84844f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cffc376c867282320b28581e8b8108f1 = $(`<div id="html_cffc376c867282320b28581e8b8108f1" style="width: 100.0%; height: 100.0%;"><b>Stop 4</b><br>Shop: Parvathi Agencies(Cbe)-Sub dealer<br>Last Visit: 2025-04-02 00:00:00</div>`)[0];
+                popup_b42fde6abb219c09d99614e00c84844f.setContent(html_cffc376c867282320b28581e8b8108f1);
+            
+        
+
+        marker_d65a23fd743d32b02890f8ee653c2460.bindPopup(popup_b42fde6abb219c09d99614e00c84844f)
+        ;
+
+        
+    
+    
+            marker_d65a23fd743d32b02890f8ee653c2460.bindTooltip(
+                `<div>
+                     4. Parvathi Agencies(Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac02157b0cae34476e8a5f1f43157efe = L.marker(
+                [10.997263, 76.960189],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_d3476cb0f20aa3671869b5fe6e0e14cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75fb7ea8b863778f5d7d4ff29d8acb28 = $(`<div id="html_75fb7ea8b863778f5d7d4ff29d8acb28" style="width: 100.0%; height: 100.0%;"><b>Stop 5</b><br>Shop: New Kashmir Chappal Stores(Cbe)-Sub dealer<br>Last Visit: 2025-01-07 00:00:00</div>`)[0];
+                popup_d3476cb0f20aa3671869b5fe6e0e14cd.setContent(html_75fb7ea8b863778f5d7d4ff29d8acb28);
+            
+        
+
+        marker_ac02157b0cae34476e8a5f1f43157efe.bindPopup(popup_d3476cb0f20aa3671869b5fe6e0e14cd)
+        ;
+
+        
+    
+    
+            marker_ac02157b0cae34476e8a5f1f43157efe.bindTooltip(
+                `<div>
+                     5. New Kashmir Chappal Stores(Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4052204571ab6001b2de0ca4d6980ed6 = L.marker(
+                [10.996894, 76.960249],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_7820207ae445e3757c0413a2d583d26b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60dfd54682f9fa005898d1971fd370d7 = $(`<div id="html_60dfd54682f9fa005898d1971fd370d7" style="width: 100.0%; height: 100.0%;"><b>Stop 6</b><br>Shop: Muthu Footwear (Cbe)-Sub dealer<br>Last Visit: 2025-08-07 00:00:00</div>`)[0];
+                popup_7820207ae445e3757c0413a2d583d26b.setContent(html_60dfd54682f9fa005898d1971fd370d7);
+            
+        
+
+        marker_4052204571ab6001b2de0ca4d6980ed6.bindPopup(popup_7820207ae445e3757c0413a2d583d26b)
+        ;
+
+        
+    
+    
+            marker_4052204571ab6001b2de0ca4d6980ed6.bindTooltip(
+                `<div>
+                     6. Muthu Footwear (Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0662e6f0450bd35765df80fdd2228d75 = L.marker(
+                [10.996649, 76.960637],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_6e2cccdc2763d543cdfe3a8bef25edfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_954e4788784006511936896a8013163e = $(`<div id="html_954e4788784006511936896a8013163e" style="width: 100.0%; height: 100.0%;"><b>Stop 7</b><br>Shop: Abi Traders(Sk)(Sub)-Sub dealer<br>Last Visit: 2025-04-07 00:00:00</div>`)[0];
+                popup_6e2cccdc2763d543cdfe3a8bef25edfb.setContent(html_954e4788784006511936896a8013163e);
+            
+        
+
+        marker_0662e6f0450bd35765df80fdd2228d75.bindPopup(popup_6e2cccdc2763d543cdfe3a8bef25edfb)
+        ;
+
+        
+    
+    
+            marker_0662e6f0450bd35765df80fdd2228d75.bindTooltip(
+                `<div>
+                     7. Abi Traders(Sk)(Sub)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6a601dc89fbab0a19632dff086858ad = L.marker(
+                [10.996017, 76.96051],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_edb886776654e98a906f5bd4dae5ba68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c2601bd93d6967a9ec3beed47388fe4 = $(`<div id="html_4c2601bd93d6967a9ec3beed47388fe4" style="width: 100.0%; height: 100.0%;"><b>Stop 8</b><br>Shop: Zam Zam Traders(Cbe)-Sub dealer<br>Last Visit: 2025-06-02 00:00:00</div>`)[0];
+                popup_edb886776654e98a906f5bd4dae5ba68.setContent(html_4c2601bd93d6967a9ec3beed47388fe4);
+            
+        
+
+        marker_e6a601dc89fbab0a19632dff086858ad.bindPopup(popup_edb886776654e98a906f5bd4dae5ba68)
+        ;
+
+        
+    
+    
+            marker_e6a601dc89fbab0a19632dff086858ad.bindTooltip(
+                `<div>
+                     8. Zam Zam Traders(Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9c523530080b9fdfeaee1b477e19707 = L.marker(
+                [10.995869, 76.960555],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_1f96bcff6daf95fb5a11ea4ba9748673 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d213fb24631283cde275f46d2b9275e7 = $(`<div id="html_d213fb24631283cde275f46d2b9275e7" style="width: 100.0%; height: 100.0%;"><b>Stop 9</b><br>Shop: Bharath Traders-Sub dealer<br>Last Visit: 2025-08-21 00:00:00</div>`)[0];
+                popup_1f96bcff6daf95fb5a11ea4ba9748673.setContent(html_d213fb24631283cde275f46d2b9275e7);
+            
+        
+
+        marker_c9c523530080b9fdfeaee1b477e19707.bindPopup(popup_1f96bcff6daf95fb5a11ea4ba9748673)
+        ;
+
+        
+    
+    
+            marker_c9c523530080b9fdfeaee1b477e19707.bindTooltip(
+                `<div>
+                     9. Bharath Traders-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09bbe45ce42b5b9b03d78f547fa7a629 = L.marker(
+                [10.995513, 76.960657],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_4c5aa63bfac24ba61730a9ec8720451d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb123bfc7780fc23d2ceabb0c37e39af = $(`<div id="html_cb123bfc7780fc23d2ceabb0c37e39af" style="width: 100.0%; height: 100.0%;"><b>Stop 10</b><br>Shop: Indian Traders(Cbe)-Sub dealer<br>Last Visit: 2025-03-19 00:00:00</div>`)[0];
+                popup_4c5aa63bfac24ba61730a9ec8720451d.setContent(html_cb123bfc7780fc23d2ceabb0c37e39af);
+            
+        
+
+        marker_09bbe45ce42b5b9b03d78f547fa7a629.bindPopup(popup_4c5aa63bfac24ba61730a9ec8720451d)
+        ;
+
+        
+    
+    
+            marker_09bbe45ce42b5b9b03d78f547fa7a629.bindTooltip(
+                `<div>
+                     10. Indian Traders(Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b017f5ef0ff8ecfbc02aac24994684b = L.marker(
+                [10.993638, 76.9611],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_3621879d6e392bf4b237e568f02eaf78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_daf59ddf5eba70df41015b34cf5df860 = $(`<div id="html_daf59ddf5eba70df41015b34cf5df860" style="width: 100.0%; height: 100.0%;"><b>Stop 11</b><br>Shop: Velco Footwear<br>Last Visit: 2025-03-13 00:00:00</div>`)[0];
+                popup_3621879d6e392bf4b237e568f02eaf78.setContent(html_daf59ddf5eba70df41015b34cf5df860);
+            
+        
+
+        marker_4b017f5ef0ff8ecfbc02aac24994684b.bindPopup(popup_3621879d6e392bf4b237e568f02eaf78)
+        ;
+
+        
+    
+    
+            marker_4b017f5ef0ff8ecfbc02aac24994684b.bindTooltip(
+                `<div>
+                     11. Velco Footwear
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e75bbc0680eb4dd0d96fed4d6f071bc = L.marker(
+                [10.993194, 76.960699],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_f32e36593eaf00e47b83b04874700833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2eac0ce17962e905c3eede772f04d1b8 = $(`<div id="html_2eac0ce17962e905c3eede772f04d1b8" style="width: 100.0%; height: 100.0%;"><b>Stop 12</b><br>Shop: New Smart Traders-Sub dealer<br>Last Visit: 2025-04-17 00:00:00</div>`)[0];
+                popup_f32e36593eaf00e47b83b04874700833.setContent(html_2eac0ce17962e905c3eede772f04d1b8);
+            
+        
+
+        marker_9e75bbc0680eb4dd0d96fed4d6f071bc.bindPopup(popup_f32e36593eaf00e47b83b04874700833)
+        ;
+
+        
+    
+    
+            marker_9e75bbc0680eb4dd0d96fed4d6f071bc.bindTooltip(
+                `<div>
+                     12. New Smart Traders-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e04b4056338ad6eee5f59983ae51a2d2 = L.marker(
+                [10.998241, 76.959355],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_3148d6f30dab27c54fcca8267e8f2728 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2190c9d22447adc4e69e860fb66cbeb = $(`<div id="html_c2190c9d22447adc4e69e860fb66cbeb" style="width: 100.0%; height: 100.0%;"><b>Stop 13</b><br>Shop: Priya Footwear (Cbe)-Sub dealer<br>Last Visit: 2025-07-28 00:00:00</div>`)[0];
+                popup_3148d6f30dab27c54fcca8267e8f2728.setContent(html_c2190c9d22447adc4e69e860fb66cbeb);
+            
+        
+
+        marker_e04b4056338ad6eee5f59983ae51a2d2.bindPopup(popup_3148d6f30dab27c54fcca8267e8f2728)
+        ;
+
+        
+    
+    
+            marker_e04b4056338ad6eee5f59983ae51a2d2.bindTooltip(
+                `<div>
+                     13. Priya Footwear (Cbe)-Sub dealer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b9150547e6ecee4a1b43feba9c79bc5 = L.marker(
+                [10.995785, 76.976507],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_ccb1c016718b71423a2655267bb96095 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9255d2e9b22f93f98fa33f37dcb38013 = $(`<div id="html_9255d2e9b22f93f98fa33f37dcb38013" style="width: 100.0%; height: 100.0%;"><b>Stop 14</b><br>Shop: T.STANES & CO.LTD .(CBE )<br>Last Visit: 2025-08-07 00:00:00</div>`)[0];
+                popup_ccb1c016718b71423a2655267bb96095.setContent(html_9255d2e9b22f93f98fa33f37dcb38013);
+            
+        
+
+        marker_3b9150547e6ecee4a1b43feba9c79bc5.bindPopup(popup_ccb1c016718b71423a2655267bb96095)
+        ;
+
+        
+    
+    
+            marker_3b9150547e6ecee4a1b43feba9c79bc5.bindTooltip(
+                `<div>
+                     14. T.STANES & CO.LTD .(CBE )
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_578e4a27c00b8950829e385775719c7c = L.marker(
+                [10.9972333, 76.9961767],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_bdb1ceef147f4a52cf4f980ef980e4ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3611f7a96e80ac1f5e359fb95d28078 = $(`<div id="html_d3611f7a96e80ac1f5e359fb95d28078" style="width: 100.0%; height: 100.0%;"><b>Stop 15</b><br>Shop: Trinity school<br>Last Visit: 2025-01-03 00:00:00</div>`)[0];
+                popup_bdb1ceef147f4a52cf4f980ef980e4ee.setContent(html_d3611f7a96e80ac1f5e359fb95d28078);
+            
+        
+
+        marker_578e4a27c00b8950829e385775719c7c.bindPopup(popup_bdb1ceef147f4a52cf4f980ef980e4ee)
+        ;
+
+        
+    
+    
+            marker_578e4a27c00b8950829e385775719c7c.bindTooltip(
+                `<div>
+                     15. Trinity school
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b0bb076c7172ead04660643cd653c3b = L.marker(
+                [10.998236, 76.9962014],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_6d41ff207f0f083710763e748124055c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22d14381bf523ec711f038532a248a3d = $(`<div id="html_22d14381bf523ec711f038532a248a3d" style="width: 100.0%; height: 100.0%;"><b>Stop 16</b><br>Shop: Trinity matriculation higher secondary school<br>Last Visit: 2025-06-20 00:00:00</div>`)[0];
+                popup_6d41ff207f0f083710763e748124055c.setContent(html_22d14381bf523ec711f038532a248a3d);
+            
+        
+
+        marker_7b0bb076c7172ead04660643cd653c3b.bindPopup(popup_6d41ff207f0f083710763e748124055c)
+        ;
+
+        
+    
+    
+            marker_7b0bb076c7172ead04660643cd653c3b.bindTooltip(
+                `<div>
+                     16. Trinity matriculation higher secondary school
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81e21f1543b7a64655eb04ff8d653cbc = L.marker(
+                [10.974062, 76.938745],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_e5bf43e8a2a7f9b3e9cdd478aa842309 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe682ceba3076a431a3823ba9c502e4f = $(`<div id="html_fe682ceba3076a431a3823ba9c502e4f" style="width: 100.0%; height: 100.0%;"><b>Stop 17</b><br>Shop: SALEEM BROTHERS(CBE)<br>Last Visit: 2025-06-27 00:00:00</div>`)[0];
+                popup_e5bf43e8a2a7f9b3e9cdd478aa842309.setContent(html_fe682ceba3076a431a3823ba9c502e4f);
+            
+        
+
+        marker_81e21f1543b7a64655eb04ff8d653cbc.bindPopup(popup_e5bf43e8a2a7f9b3e9cdd478aa842309)
+        ;
+
+        
+    
+    
+            marker_81e21f1543b7a64655eb04ff8d653cbc.bindTooltip(
+                `<div>
+                     17. SALEEM BROTHERS(CBE)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78a22a7079b473af64fed8e6d3e0ee65 = L.marker(
+                [10.9186667, 76.97688],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_36ee1fbe6b137b00b38a44b64dc60f60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04883741a009a6629adc9b4b0acdde79 = $(`<div id="html_04883741a009a6629adc9b4b0acdde79" style="width: 100.0%; height: 100.0%;"><b>Stop 18</b><br>Shop: orison<br>Last Visit: 2025-04-09 00:00:00</div>`)[0];
+                popup_36ee1fbe6b137b00b38a44b64dc60f60.setContent(html_04883741a009a6629adc9b4b0acdde79);
+            
+        
+
+        marker_78a22a7079b473af64fed8e6d3e0ee65.bindPopup(popup_36ee1fbe6b137b00b38a44b64dc60f60)
+        ;
+
+        
+    
+    
+            marker_78a22a7079b473af64fed8e6d3e0ee65.bindTooltip(
+                `<div>
+                     18. orison
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8d4338ffcfbfc2ebcd77419daa79723 = L.marker(
+                [10.8996119, 76.9741364],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_d62c38cee8e69836c51b7f37bb9d1d90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e073c69d08785aab4581d8744989315 = $(`<div id="html_7e073c69d08785aab4581d8744989315" style="width: 100.0%; height: 100.0%;"><b>Stop 19</b><br>Shop: boots footwear<br>Last Visit: 2025-03-29 00:00:00</div>`)[0];
+                popup_d62c38cee8e69836c51b7f37bb9d1d90.setContent(html_7e073c69d08785aab4581d8744989315);
+            
+        
+
+        marker_c8d4338ffcfbfc2ebcd77419daa79723.bindPopup(popup_d62c38cee8e69836c51b7f37bb9d1d90)
+        ;
+
+        
+    
+    
+            marker_c8d4338ffcfbfc2ebcd77419daa79723.bindTooltip(
+                `<div>
+                     19. boots footwear
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39b5152d8be253df7cfc47902042d75f = L.marker(
+                [10.88533, 76.9795383],
+                {}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+    
+        var popup_cada03642884a99eb23b61764fba8277 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67ee45e1e043d0afb621bb4574bc03cb = $(`<div id="html_67ee45e1e043d0afb621bb4574bc03cb" style="width: 100.0%; height: 100.0%;"><b>Stop 20</b><br>Shop: Ravel matriculation school<br>Last Visit: 2025-02-17 00:00:00</div>`)[0];
+                popup_cada03642884a99eb23b61764fba8277.setContent(html_67ee45e1e043d0afb621bb4574bc03cb);
+            
+        
+
+        marker_39b5152d8be253df7cfc47902042d75f.bindPopup(popup_cada03642884a99eb23b61764fba8277)
+        ;
+
+        
+    
+    
+            marker_39b5152d8be253df7cfc47902042d75f.bindTooltip(
+                `<div>
+                     20. Ravel matriculation school
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4e48e9dd0e4bb89d47d15c75d43885b7 = L.polyline(
+                [[11.0184, 76.9444], [10.999355, 76.959857], [10.998188, 76.959988], [10.99772, 76.960051], [10.997328, 76.960152], [10.997263, 76.960189], [10.996894, 76.960249], [10.996649, 76.960637], [10.996017, 76.96051], [10.995869, 76.960555], [10.995513, 76.960657], [10.993638, 76.9611], [10.993194, 76.960699], [10.998241, 76.959355], [10.995785, 76.976507], [10.9972333, 76.9961767], [10.998236, 76.9962014], [10.974062, 76.938745], [10.9186667, 76.97688], [10.8996119, 76.9741364], [10.88533, 76.9795383], [11.0184, 76.9444]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_867fd5602c8a3fc04f40db3d11dc3f8a);
+        
+</script>
+</html>

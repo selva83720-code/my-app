@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Data Viewer - Walkaroo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            padding-top: 2rem;
+            max-width: 95%;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .table-responsive {
+            max-height: 70vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1><i class="fas fa-database"></i> Source Data Viewer</h1>
+            <div>
+                <a href="/" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Planner</a>
+                <a href="/download/source-data" class="btn btn-success"><i class="fas fa-file-excel"></i> Download Full Excel File</a>
+            </div>
+        </div>
+        <p class="text-muted">Showing all rows from each sheet. You can use the download button for the full file.</p>
+
+        <!-- Source Data -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3>Source Data (Sheet1)</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    {{ source_table|safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
