@@ -113,7 +113,11 @@ def download_source_data():
     except Exception as e:
         return jsonify({"error": f"File not found or error sending file: {str(e)}"}), 404
 
-
 if __name__ == "__main__":
-    # Debug mode is controlled by the FLASK_DEBUG environment variable
-    app.run(debug=os.environ.get('FLASK_DEBUG', 'False').lower() == 'true', port=5004)
+    # Run Flask app publicly (accessible via EC2 public IP)
+    app.run(
+        host='0.0.0.0',                     # makes it visible outside the server
+        port=5004,                          # keep your existing port
+        debug=os.environ.get('FLASK_DEBUG', 'False').lower() == 'true'
+    )
+
